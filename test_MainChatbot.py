@@ -57,7 +57,7 @@ from main import chatbot
 from fastapi import FastAPI, Request
 from fastapi.responses import HTMLResponse
 from inference import initialize_faiss, search_with_score
-import gradio as gr.
+import gradio as gr
 
 class Test_MainChatbot:
 
