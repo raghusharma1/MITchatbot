@@ -1,1 +1,9 @@
-
+beautifulsoup4
+fastapi
+gradio
+langchain
+langchain_community
+langchain_core
+langchain_text_splitters
+pytest
+Requests
