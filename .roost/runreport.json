@@ -1,0 +1,245 @@
+{
+  "run_id": "aa988376",
+  "started_at": "2026-04-29T11:06:09.249752Z",
+  "ended_at": "2026-04-29T11:09:27.150504Z",
+  "status": "failed",
+  "config": {
+    "repo": "C:\\var\\tmp\\Roost\\RoostGPT\\python-test-agent-msr-calc\\1777460678\\source\\MITchatbot",
+    "out": "C:\\var\\tmp\\Roost\\RoostGPT\\python-test-agent-msr-calc\\1777460678\\source\\MITchatbot",
+    "workers": 10,
+    "scenarios_from": "planner",
+    "provider": "env:AI_TYPE",
+    "model": "gemini/gemini-3-flash-preview",
+    "jedi": true
+  },
+  "summary": {
+    "targets_total": 3,
+    "targets_passed": 0,
+    "targets_failed": 0,
+    "targets_partial": 3,
+    "targets_skipped": 0,
+    "scenarios_total": 14,
+    "scenarios_passed": 0,
+    "scenarios_failed": 14,
+    "coverage_weighted": null,
+    "llm_cost_usd": 0.4644,
+    "llm_input_tokens": 1573386,
+    "llm_output_tokens": 51427,
+    "llm_cache_read_input_tokens": 1059045,
+    "llm_cache_creation_input_tokens": 0,
+    "llm_api_calls": 87,
+    "elapsed_ms": 0
+  },
+  "targets": [
+    {
+      "target_symbol_id": "inference.initialize_faiss",
+      "symbol_kind": "function",
+      "source_file": "inference.py",
+      "source_range": [
+        8,
+        26
+      ],
+      "test_file": "C:\\var\\tmp\\Roost\\RoostGPT\\python-test-agent-msr-calc\\1777460678\\source\\MITchatbot\\module\\test_initialize_faiss.py",
+      "test_file_hash": "sha256:29fec0338c2a15de476d384c83e55c67d63009cbf3bff83db277258e6c073381",
+      "test_status": "partial",
+      "iterations": 35,
+      "pivots": 1,
+      "scenarios": [
+        {
+          "scenario_id": "inference.initialize_faiss#0",
+          "scenario_name": "successful_initialization",
+          "passed": false,
+          "duration_ms": null,
+          "failure_reason": "no pytest result",
+          "stderr_excerpt": null
+        },
+        {
+          "scenario_id": "inference.initialize_faiss#1",
+          "scenario_name": "load_local_failure",
+          "passed": false,
+          "duration_ms": null,
+          "failure_reason": "no pytest result",
+          "stderr_excerpt": null
+        },
+        {
+          "scenario_id": "inference.initialize_faiss#2",
+          "scenario_name": "embeddings_initialization_failure",
+          "passed": false,
+          "duration_ms": null,
+          "failure_reason": "no pytest result",
+          "stderr_excerpt": null
+        },
+        {
+          "scenario_id": "inference.initialize_faiss#3",
+          "scenario_name": "corrupt_index_file",
+          "passed": false,
+          "duration_ms": null,
+          "failure_reason": "no pytest result",
+          "stderr_excerpt": null
+        }
+      ],
+      "coverage_pct": null,
+      "writer_cost_usd": 0.1595872,
+      "writer_input_tokens": 558158,
+      "writer_output_tokens": 12919,
+      "writer_cache_read_input_tokens": 351664,
+      "writer_cache_creation_input_tokens": 0,
+      "diagnostics": []
+    },
+    {
+      "target_symbol_id": "inference.search_with_score",
+      "symbol_kind": "function",
+      "source_file": "inference.py",
+      "source_range": [
+        29,
+        47
+      ],
+      "test_file": "C:\\var\\tmp\\Roost\\RoostGPT\\python-test-agent-msr-calc\\1777460678\\source\\MITchatbot\\module\\test_search_with_score.py",
+      "test_file_hash": "sha256:04943c37e6bd686a0485fb0634d3c14b7aede3a3a6a306f42e500f374384a6b6",
+      "test_status": "partial",
+      "iterations": 23,
+      "pivots": 1,
+      "scenarios": [
+        {
+          "scenario_id": "inference.search_with_score#0",
+          "scenario_name": "happy_path_success",
+          "passed": false,
+          "duration_ms": null,
+          "failure_reason": "no pytest result",
+          "stderr_excerpt": null
+        },
+        {
+          "scenario_id": "inference.search_with_score#1",
+          "scenario_name": "empty_search_results",
+          "passed": false,
+          "duration_ms": null,
+          "failure_reason": "no pytest result",
+          "stderr_excerpt": null
+        },
+        {
+          "scenario_id": "inference.search_with_score#2",
+          "scenario_name": "multiple_search_results",
+          "passed": false,
+          "duration_ms": null,
+          "failure_reason": "no pytest result",
+          "stderr_excerpt": null
+        },
+        {
+          "scenario_id": "inference.search_with_score#3",
+          "scenario_name": "retrieval_chain_failure",
+          "passed": false,
+          "duration_ms": null,
+          "failure_reason": "no pytest result",
+          "stderr_excerpt": null
+        },
+        {
+          "scenario_id": "inference.search_with_score#4",
+          "scenario_name": "db_is_none",
+          "passed": false,
+          "duration_ms": null,
+          "failure_reason": "no pytest result",
+          "stderr_excerpt": null
+        }
+      ],
+      "coverage_pct": null,
+      "writer_cost_usd": 0.12775735,
+      "writer_input_tokens": 441728,
+      "writer_output_tokens": 18764,
+      "writer_cache_read_input_tokens": 331997,
+      "writer_cache_creation_input_tokens": 0,
+      "diagnostics": []
+    },
+    {
+      "target_symbol_id": "main.chatbot",
+      "symbol_kind": "function",
+      "source_file": "main.py",
+      "source_range": [
+        11,
+        22
+      ],
+      "test_file": "C:\\var\\tmp\\Roost\\RoostGPT\\python-test-agent-msr-calc\\1777460678\\source\\MITchatbot\\module\\test_chatbot.py",
+      "test_file_hash": "sha256:744384d281e2824680656f764ff83991b0f30280768ed311414f56b02ce2eac0",
+      "test_status": "partial",
+      "iterations": 29,
+      "pivots": 1,
+      "scenarios": [
+        {
+          "scenario_id": "main.chatbot#0",
+          "scenario_name": "successful_query",
+          "passed": false,
+          "duration_ms": null,
+          "failure_reason": "no pytest result",
+          "stderr_excerpt": null
+        },
+        {
+          "scenario_id": "main.chatbot#1",
+          "scenario_name": "db_loading_failed",
+          "passed": false,
+          "duration_ms": null,
+          "failure_reason": "no pytest result",
+          "stderr_excerpt": null
+        },
+        {
+          "scenario_id": "main.chatbot#2",
+          "scenario_name": "missing_answer_key",
+          "passed": false,
+          "duration_ms": null,
+          "failure_reason": "no pytest result",
+          "stderr_excerpt": null
+        },
+        {
+          "scenario_id": "main.chatbot#3",
+          "scenario_name": "empty_query",
+          "passed": false,
+          "duration_ms": null,
+          "failure_reason": "no pytest result",
+          "stderr_excerpt": null
+        },
+        {
+          "scenario_id": "main.chatbot#4",
+          "scenario_name": "score_parameter_ignored",
+          "passed": false,
+          "duration_ms": null,
+          "failure_reason": "no pytest result",
+          "stderr_excerpt": null
+        }
+      ],
+      "coverage_pct": null,
+      "writer_cost_usd": 0.17705919999999997,
+      "writer_input_tokens": 573500,
+      "writer_output_tokens": 19744,
+      "writer_cache_read_input_tokens": 375384,
+      "writer_cache_creation_input_tokens": 0,
+      "diagnostics": []
+    }
+  ],
+  "files_written": [
+    {
+      "path": "module/test_initialize_faiss.py",
+      "hash": "sha256:29fec0338c2a15de476d384c83e55c67d63009cbf3bff83db277258e6c073381",
+      "status": "created"
+    },
+    {
+      "path": "module/test_search_with_score.py",
+      "hash": "sha256:04943c37e6bd686a0485fb0634d3c14b7aede3a3a6a306f42e500f374384a6b6",
+      "status": "created"
+    },
+    {
+      "path": "module/test_chatbot.py",
+      "hash": "sha256:744384d281e2824680656f764ff83991b0f30280768ed311414f56b02ce2eac0",
+      "status": "created"
+    }
+  ],
+  "pr_ready": {
+    "branch_suggestion": "roost/python-tests-20260429-1109",
+    "commit_message": "roost-pytest: add 3 test file(s)",
+    "pr_title": "Auto-generated Python unit tests (3 file(s))",
+    "pr_body_markdown": "## Summary\n- 0 targets with fully green tests\n- 3 targets with partial coverage\n\n## Generated test files\n- `module/test_initialize_faiss.py`\n- `module/test_search_with_score.py`\n- `module/test_chatbot.py`",
+    "changed_files": [
+      "module/test_initialize_faiss.py",
+      "module/test_search_with_score.py",
+      "module/test_chatbot.py"
+    ]
+  },
+  "diagnostics": []
+}
